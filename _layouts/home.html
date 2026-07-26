@@ -1,0 +1,53 @@
+---
+layout: default
+---
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Tech for Good</p>
+    <h1>Technology, applied to healthier lives.</h1>
+    <p class="lede">{{ site.description }}</p>
+  </div>
+</section>
+
+<section class="pillars">
+  <div class="wrap">
+    <div class="pillar-grid">
+      <a class="pillar-card" href="{{ '/digital-point-of-care/' | relative_url }}">
+        <span class="pillar-node"></span>
+        <h3>Digital Point of Care</h3>
+        <p>Technology at the places where patients are received and treated — EHR systems, appointment management, care coordination.</p>
+        <span class="go">Explore &rarr;</span>
+      </a>
+      <a class="pillar-card" href="{{ '/tech-in-pharma/' | relative_url }}">
+        <span class="pillar-node"></span>
+        <h3>Tech in Pharma</h3>
+        <p>How AI and automation are transforming the commercial and operational side of the pharmaceutical industry.</p>
+        <span class="go">Explore &rarr;</span>
+      </a>
+      <a class="pillar-card" href="{{ '/ai-powered-rd/' | relative_url }}">
+        <span class="pillar-node"></span>
+        <h3>AI-Powered R&amp;D</h3>
+        <p>How AI tools are speeding up the discovery and development of new medicines.</p>
+        <span class="go">Explore &rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="latest">
+  <div class="wrap">
+    <h2 class="section-label">Latest</h2>
+    <div class="article-list">
+      {% for post in site.posts limit: 6 %}
+      <a class="article-row" href="{{ post.url | relative_url }}">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
+        <div>
+          <span class="tag">{{ post.categories | first | replace: '-', ' ' }}</span>
+          <h3>{{ post.title }}</h3>
+          <p>{{ post.excerpt | strip_html | truncatewords: 28 }}</p>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
