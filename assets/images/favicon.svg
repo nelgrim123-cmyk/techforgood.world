@@ -1,13 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 160">
-  <defs>
-    <style>@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700;400&amp;display=swap');</style>
-  </defs>
-
-  <!-- connecting lines -->
-  <polyline points="18,72 54,72 80,30 108,112 134,60 160,88 196,72 234,72"
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 122">
+  <polyline points="18,72 54,72 80,30 108,112 134,60 160,88 196,72"
     fill="none" stroke="#2a7a9a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-
-  <!-- nodes -->
   <circle cx="18"  cy="72"  r="9"   fill="#3a9aad"/>
   <circle cx="54"  cy="72"  r="13"  fill="#013266"/>
   <circle cx="80"  cy="30"  r="6.5" fill="#1a6693"/>
@@ -15,11 +8,4 @@
   <circle cx="134" cy="60"  r="14"  fill="#013266"/>
   <circle cx="160" cy="88"  r="7"   fill="#1a6693"/>
   <circle cx="196" cy="72"  r="11"  fill="#013266"/>
-  <circle cx="234" cy="72"  r="7.5" fill="#3a9aad"/>
-
-  <!-- wordmark -->
-  <text x="140" y="138" font-family="Work Sans, Arial, sans-serif" font-weight="700"
-    font-size="22" fill="#013266" text-anchor="middle" letter-spacing="3">TECHFORGOOD</text>
-  <text x="140" y="155" font-family="Work Sans, Arial, sans-serif" font-weight="400"
-    font-size="8.5" fill="#2a7a9a" text-anchor="middle" letter-spacing="1.5">TECHNOLOGY FOR A BETTER FUTURE</text>
 </svg>

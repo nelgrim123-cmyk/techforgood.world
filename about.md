@@ -4,28 +4,34 @@ title: About
 permalink: /about/
 ---
 
-I work at the intersection of technology and healthcare — and I have spent my career there because it is where technical decisions carry real human consequences.
+<div class="about-hero">
+  <img src="{{ '/assets/images/profile.png' | relative_url }}" alt="Aniello Grimaldi" class="about-photo">
+  <div class="about-intro">
+    <h2 class="about-name">Aniello Grimaldi</h2>
+    <p class="about-tagline">Health Technology Expert · Digital Health · Life Sciences</p>
+    <a href="https://www.linkedin.com/in/aniellogrimaldi/" target="_blank" rel="noopener" class="about-linkedin">
+      Connect on LinkedIn →
+    </a>
+  </div>
+</div>
 
 ## What I do
 
-My expertise sits in health technology: how digital systems, data and AI are applied across the healthcare value chain, from the point where a patient is received and treated, through the commercial machinery of the pharmaceutical industry, to the research pipelines where new medicines are discovered.
+- Expert in health technology applied across the full healthcare value chain
+- From patient-facing digital systems to pharma commercial operations and biomedical R&D
+- Deep knowledge of how digital systems, AI and data intersect with clinical and business reality
+- Experienced in bridging the gap between technology potential and operational implementation
 
-That span is deliberate. Most people in this field specialise in one segment and lose sight of the others. I have spent years working across them, which means I can see how a decision made in a research lab eventually shows up as a constraint in a clinic — and why so many promising health technologies fail not on the science, but on everything that surrounds it.
+## Background
 
-## Where my expertise comes from
+- **Health Technology** — years advising on digital systems in complex, regulated environments
+- **Academic** — Master's degree in Digital Health (data analysis, AI ethics, NLP, eHealth design)
+- **Scope** — works across hospital digitalization, pharmaceutical industry transformation, and R&D acceleration
 
-Two sources, reinforcing each other.
+## Why this site
 
-The first is professional: years spent advising on health technology systems in real operational contexts — where the requirements are messy, the regulation is unforgiving, and the difference between a working system and a failed implementation is rarely the underlying technology.
-
-The second is formal: a Master's degree in Digital Health, covering clinical data analysis, AI ethics, natural language processing applied to medical text, and the design of eHealth systems. Academic grounding matters in this field, because healthcare is one of the few domains where being confidently wrong has a cost measured in outcomes rather than revenue.
-
-## Why I write here
-
-The public conversation about health technology tends to swing between two unhelpful extremes: uncritical enthusiasm, and reflexive dismissal. Neither is useful to someone trying to make an actual decision.
-
-What I write here is the middle ground — informed by what these systems look like when they are deployed rather than demonstrated. Where the technology genuinely helps, where it is oversold, and what separates the two.
+The public conversation about health technology swings between uncritical hype and reflexive dismissal. Neither is useful. This site is the middle ground — written from the inside of the industry, not from the outside looking in.
 
 ## Get in touch
 
-I am always interested in a well-argued disagreement. Find me on [LinkedIn](https://www.linkedin.com/).
+[linkedin.com/in/aniellogrimaldi](https://www.linkedin.com/in/aniellogrimaldi/)
