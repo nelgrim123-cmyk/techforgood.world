@@ -17,20 +17,19 @@ permalink: /about/
 
 ## What I do
 
-- Expert in health technology applied across the full healthcare value chain
-- From patient-facing digital systems to pharma commercial operations and biomedical R&D
-- Deep knowledge of how digital systems, AI and data intersect with clinical and business reality
-- Experienced in bridging the gap between technology potential and operational implementation
+- Advisor in health technology across the full healthcare value chain — from hospital digitalization to pharma commercial operations and biomedical R&D
+- Hands-on experience where digital systems, AI and data meet clinical and business reality
+- Focused on what actually works in production, not just in theory
 
 ## Background
 
-- **Health Technology** — years advising on digital systems in complex, regulated environments
-- **Academic** — Master's degree in Digital Health (data analysis, AI ethics, NLP, eHealth design)
-- **Scope** — works across hospital digitalization, pharmaceutical industry transformation, and R&D acceleration
+- **Health Technology** years advising on digital systems in complex, regulated environments
+- **Academic** — Master's degree in Digital Health (data analysis, AI ethics, NLP, eHealth design) and Business Administration & Technology degree
+- **Focus** — works across hospital digitalization, pharmaceutical industry transformation and R&D acceleration
 
 ## Why this site
 
-The public conversation about health technology swings between uncritical hype and reflexive dismissal. Neither is useful. This site is the middle ground — written from the inside of the industry, not from the outside looking in.
+I can't save lives in a hospital but I can help make the technology around it better. I write here because I believe that understanding how digital systems, AI and data reshape healthcare is too important to stay inside conference rooms. These are my perspectives, built from real experience in the field.
 
 ## Get in touch
 
