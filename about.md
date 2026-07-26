@@ -34,4 +34,4 @@ The public conversation about health technology swings between uncritical hype a
 
 ## Get in touch
 
-[linkedin.com/in/aniellogrimaldi](https://www.linkedin.com/in/aniellogrimaldi/)
+hello@techforgood.world
