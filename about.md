@@ -24,8 +24,8 @@ permalink: /about/
 ## Background
 
 - **Health Technology** years advising on digital systems in complex, regulated environments
-- **Academic** — Master's degree in Digital Health (data analysis, AI ethics, NLP, eHealth design) and Business Administration & Technology degree
-- **Focus** — works across hospital digitalization, pharmaceutical industry transformation and R&D acceleration
+- **Academic** Master's degree in Digital Health (data analysis, AI ethics, NLP, eHealth design) and Business Administration & Technology degree
+- **Focus** works across hospital digitalization, pharmaceutical industry transformation and R&D acceleration
 
 ## Why this site
 
