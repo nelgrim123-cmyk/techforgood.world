@@ -17,7 +17,7 @@ permalink: /about/
 
 ## What I do
 
-- Advisor in health technology across the full healthcare value chain — from hospital digitalization to pharma commercial operations and biomedical R&D
+- Advisor in technology across the full value chain — from hospital digitalization to pharma commercial operations and biomedical tech R&D
 - Hands-on experience where digital systems, AI and data meet clinical and business reality
 - Focused on what actually works in production, not just in theory
 
