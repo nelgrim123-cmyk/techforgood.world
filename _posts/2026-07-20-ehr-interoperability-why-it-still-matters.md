@@ -2,6 +2,7 @@
 title: "EHR interoperability: the unglamorous problem still shaping patient experience"
 categories: [digital-point-of-care]
 read_time: 4
+cover: /assets/images/covers/ehr-interoperability.jpeg
 ---
 
 Every hospital has an electronic health record system. Most patients still repeat their medical history at every new front desk. That gap — between having the technology and having it actually work for the person in front of it — is where digital health so often stalls.

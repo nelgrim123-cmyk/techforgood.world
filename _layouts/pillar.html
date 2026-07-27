@@ -22,6 +22,7 @@ layout: default
       {% assign posts = site.posts | where_exp: "post", "post.categories contains page.category" %}
       {% for post in posts %}
       <a class="post-card" href="{{ post.url | relative_url }}">
+        {% if post.cover %}<img class="post-card-cover" src="{{ post.cover | relative_url }}" alt="{{ post.title }}">{% endif %}
         <span class="tag tag--{{ page.category }}">{{ post.categories | first | replace: '-', ' ' }}</span>
         <h3>{{ post.title }}</h3>
         <p>{{ post.excerpt | strip_html | truncatewords: 22 }}</p>

@@ -2,6 +2,7 @@
 title: "Where AI is actually landing in pharma's commercial engine"
 categories: [tech-in-pharma]
 read_time: 5
+cover: /assets/images/covers/ai-commercial-pharma.jpeg
 ---
 
 Ask ten people in pharma where AI is having an impact, and most will point to drug discovery. Fewer will mention the less visible but equally consequential shift happening on the commercial side: pricing, contracting, rebates, and market access — the operational machinery that determines whether an approved medicine actually reaches patients at a viable price.

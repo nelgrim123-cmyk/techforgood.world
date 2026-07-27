@@ -2,6 +2,7 @@
 title: "AI won't cure the ten-year drug pipeline, but it is compressing pieces of it"
 categories: [ai-powered-rd]
 read_time: 5
+cover: /assets/images/covers/ai-drug-discovery.png
 ---
 
 The statistic that gets repeated in every R&D conference talk is some version of this: it takes on average over a decade and billions of dollars to bring a new medicine to market, and most candidates fail along the way. AI is regularly framed as the thing that finally breaks that equation. The more accurate framing is narrower, and more useful: AI is not compressing the whole pipeline, it is compressing specific, well-defined pieces of it.

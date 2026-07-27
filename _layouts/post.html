@@ -27,6 +27,11 @@ layout: default
       </div>
     </div>
   </header>
+  {% if page.cover %}
+  <div class="wrap">
+    <img class="post-cover" src="{{ page.cover | relative_url }}" alt="{{ page.title }}">
+  </div>
+  {% endif %}
   <div class="wrap">
     <div class="post-body">
       {{ content }}

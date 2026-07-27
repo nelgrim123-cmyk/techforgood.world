@@ -300,6 +300,15 @@ a:hover { color: var(--navy); }
   gap: 14px;
 }
 
+.post-card-cover {
+  width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+  margin: -24px -24px 0;
+  width: calc(100% + 48px);
+  max-width: none;
+}
+
 .tag {
   font-family: var(--font-body);
   font-size: 12px;
@@ -348,6 +357,14 @@ a:hover { color: var(--navy); }
 
 .post-header { padding: 72px 0 40px; border-bottom: 1px solid var(--border); }
 .post-header .wrap { max-width: 720px; }
+
+.post-cover {
+  width: 100%;
+  max-width: 900px;
+  aspect-ratio: 21/9;
+  object-fit: cover;
+  margin: 40px auto;
+}
 
 .back-link {
   display: inline-block;
