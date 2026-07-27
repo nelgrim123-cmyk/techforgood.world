@@ -1,11 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 122">
-  <polyline points="18,72 54,72 80,30 108,112 134,60 160,88 196,72"
-    fill="none" stroke="#2a7a9a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="18"  cy="72"  r="9"   fill="#3a9aad"/>
-  <circle cx="54"  cy="72"  r="13"  fill="#013266"/>
-  <circle cx="80"  cy="30"  r="6.5" fill="#1a6693"/>
-  <circle cx="108" cy="112" r="8"   fill="#1a6693"/>
-  <circle cx="134" cy="60"  r="14"  fill="#013266"/>
-  <circle cx="160" cy="88"  r="7"   fill="#1a6693"/>
-  <circle cx="196" cy="72"  r="11"  fill="#013266"/>
+  <polyline points="18,72 54,72 80,30 108,112 134,60 160,88 196,72" fill="none" stroke="#2a7a9a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></polyline>
+  <circle cx="18" cy="72" r="9" fill="#3a9aad"></circle>
+  <circle cx="54" cy="72" r="13" fill="#013266"></circle>
+  <circle cx="80" cy="30" r="6.5" fill="#1a6693"></circle>
+  <circle cx="108" cy="112" r="8" fill="#1a6693"></circle>
+  <circle cx="134" cy="60" r="14" fill="#013266"></circle>
+  <circle cx="160" cy="88" r="7" fill="#1a6693"></circle>
+  <circle cx="196" cy="72" r="11" fill="#013266"></circle>
 </svg>
