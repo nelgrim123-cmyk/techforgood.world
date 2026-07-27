@@ -1,27 +1,44 @@
 ---
 layout: default
 ---
-<section class="pillar-hero">
+<section class="pillar-hero pillar-hero--{{ page.category }}">
   <div class="wrap">
-    <p class="eyebrow">{{ page.eyebrow }}</p>
+    <p class="eyebrow eyebrow--{{ page.category }}">{{ page.eyebrow }}</p>
     <h1>{{ page.title }}</h1>
     <p>{{ page.description }}</p>
   </div>
 </section>
 
-<section class="latest">
+<section class="pillar-why">
   <div class="wrap">
-    <div class="article-list">
+    {{ content }}
+  </div>
+</section>
+
+<section class="pillar-articles">
+  <div class="wrap">
+    <h2 class="section-label">Articles in this pillar</h2>
+    <div class="card-grid">
       {% assign posts = site.posts | where_exp: "post", "post.categories contains page.category" %}
       {% for post in posts %}
-      <a class="article-row" href="{{ post.url | relative_url }}">
-        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
-        <div>
-          <h3>{{ post.title }}</h3>
-          <p>{{ post.excerpt | strip_html | truncatewords: 28 }}</p>
-        </div>
+      <a class="post-card" href="{{ post.url | relative_url }}">
+        <span class="tag tag--{{ page.category }}">{{ post.categories | first | replace: '-', ' ' }}</span>
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.excerpt | strip_html | truncatewords: 22 }}</p>
+        <span class="meta">{% if post.read_time %}{{ post.read_time }} min read · {% endif %}{{ post.date | date: "%b %Y" }}</span>
       </a>
       {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="other-pillars">
+  <div class="wrap">
+    <p class="section-label">Other pillars</p>
+    <div class="pill-row">
+      {% unless page.category == 'digital-point-of-care' %}<a class="pill pill--digital-point-of-care" href="{{ '/digital-point-of-care/' | relative_url }}">Digital Point of Care &rarr;</a>{% endunless %}
+      {% unless page.category == 'tech-in-pharma' %}<a class="pill pill--tech-in-pharma" href="{{ '/tech-in-pharma/' | relative_url }}">Tech in Pharma &rarr;</a>{% endunless %}
+      {% unless page.category == 'ai-powered-rd' %}<a class="pill pill--ai-powered-rd" href="{{ '/ai-powered-rd/' | relative_url }}">AI-Powered R&amp;D &rarr;</a>{% endunless %}
     </div>
   </div>
 </section>

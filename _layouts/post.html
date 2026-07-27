@@ -1,14 +1,29 @@
 ---
 layout: default
 ---
+{% assign cat = page.categories | first %}
+{% if cat == 'digital-point-of-care' %}
+  {% assign pillarname = 'Digital Point of Care' %}
+  {% assign pillarurl = '/digital-point-of-care/' %}
+{% elsif cat == 'tech-in-pharma' %}
+  {% assign pillarname = 'Tech in Pharma' %}
+  {% assign pillarurl = '/tech-in-pharma/' %}
+{% else %}
+  {% assign pillarname = 'AI-Powered R&D' %}
+  {% assign pillarurl = '/ai-powered-rd/' %}
+{% endif %}
 <article>
   <header class="post-header">
     <div class="wrap">
-      <p class="eyebrow">{{ page.categories | first | replace: '-', ' ' }}</p>
+      <a class="back-link" href="{{ pillarurl | relative_url }}">&larr; {{ pillarname }}</a>
+      <p class="eyebrow eyebrow--{{ cat }}">{{ cat | replace: '-', ' ' | capitalize }}</p>
       <h1>{{ page.title }}</h1>
       <div class="post-meta">
-        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
-        {% if page.read_time %}<span>{{ page.read_time }} min read</span>{% endif %}
+        <img class="post-avatar" src="{{ '/assets/images/profile.png' | relative_url }}" alt="Aniello Grimaldi">
+        <div>
+          <span class="post-author">Aniello Grimaldi</span>
+          <span class="post-date">{{ page.date | date: "%B %d, %Y" }}{% if page.read_time %} · {{ page.read_time }} min read{% endif %}</span>
+        </div>
       </div>
     </div>
   </header>
