@@ -20,3 +20,7 @@ Late-stage clinical development — the part of the pipeline that consumes the m
 ## The realistic version
 
 The more grounded story is a pipeline where each stage gets somewhat faster and somewhat more efficient, compounding into a meaningful — but not miraculous — overall gain. That is a less exciting pitch than "AI cures cancer twice as fast." It also happens to be the version that is actually happening.
+
+---
+
+*Article written and edited by the author with the support of Claude (Anthropic).*

@@ -20,3 +20,7 @@ Good scheduling systems do more than fill calendar slots. They reduce no-shows b
 The most effective digital point-of-care systems share a pattern: they are boring in the best sense. They do not ask patients or staff to think about the technology at all. The record is simply there, complete, at the moment of care. The appointment is simply booked, without a phone call. The technology's success is measured by how little anyone notices it.
 
 That is a harder standard than it sounds. It means designing for the messiest real-world cases — a patient seen across three different providers, a system migration mid-year, a rural clinic with unreliable connectivity — rather than the clean demo scenario. It is unglamorous work. It is also, arguably, the work that matters most.
+
+---
+
+*Article written and edited by the author with the support of Claude (Anthropic).*

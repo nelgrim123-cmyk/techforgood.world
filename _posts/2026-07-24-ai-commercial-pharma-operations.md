@@ -18,3 +18,7 @@ The traditional model in commercial operations is reactive: a rebate gets calcul
 The honest constraint is not technical capability, it is trust. A pricing decision that is wrong by a fraction of a percentage point can mean a contractual breach, a regulatory inquiry, or a damaged relationship with a key account. That is a different risk profile from a recommendation engine getting a product suggestion wrong. So the pattern that is actually working in practice is not full automation — it is AI doing the heavy computational lifting, with a human still accountable for the final sign-off.
 
 That may sound like a modest ambition compared to the more dramatic AI narratives elsewhere in the industry. But in a function where the two ends of transformation are massive efficiency gains and equally massive compliance exposure, modest and well-governed is usually the right pace.
+
+---
+
+*Article written and edited by the author with the support of Claude (Anthropic).*
