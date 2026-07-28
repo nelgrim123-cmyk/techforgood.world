@@ -37,6 +37,10 @@ In entrambi i casi resta fermo l'obbligo di deposito presso AIFA dieci giorni pr
 
 **Documentazione tecnica in allegato.** Il RSS deve fornire una dichiarazione sulla validazione dell'algoritmo e sulla vigilanza sugli output, coerente con l'art. 11 dell'AI Act sulla documentazione tecnica dei sistemi ad alto rischio.
 
+**Gestione del rischio e stress test.** In coerenza con gli artt. 9 e 15 dell'AI Act, le aziende devono integrare l'uso dell'IA nel proprio sistema di gestione della qualità: un processo continuo di identificazione, valutazione e mitigazione dei rischi, con prove di robustezza (stress test) sul comportamento del sistema nei diversi scenari d'uso e un monitoraggio periodico documentato.
+
+**Controlli a campione di AIFA.** Anche in assenza di autorizzazione preventiva, l'Ufficio UIMVP può effettuare controlli a campione sui materiali promozionali per verificarne la conformità al Titolo VIII del d.lgs. 219/2006 e alla linea di indirizzo — da qui la raccomandazione di conservare tutta la documentazione del processo di predisposizione del MP.
+
 ## Perché conta oltre la compliance
 
 Questa linea di indirizzo arriva mentre l'uso di IA generativa nei processi commerciali e regolatori del pharma sta smettendo di essere sperimentale (ne avevamo scritto parlando dell'AI nel motore commerciale del settore). AIFA non vieta l'IA nei materiali promozionali — la inquadra. E lo fa chiedendo esattamente ciò che dovrebbe già valere come buona pratica interna: fonti verificabili, supervisione umana reale, tracciabilità end-to-end.
