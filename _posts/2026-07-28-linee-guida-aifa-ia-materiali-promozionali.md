@@ -45,6 +45,6 @@ Le aziende che hanno già processi di validazione strutturati per i contenuti pr
 
 ---
 
-**Fonte:** [AIFA — Linee di indirizzo, Ufficio Informazione sui Medicinali e Vigilanza sulla Pubblicità (24 luglio 2026)](https://www.aifa.gov.it/-/linee-indirizzo-utilizzo-sistemi-intelligenza-artificiale-materiali-promozionali)
+**Fonte:** <a href="https://www.aifa.gov.it/-/linee-indirizzo-utilizzo-sistemi-intelligenza-artificiale-materiali-promozionali" target="_blank" rel="noopener">AIFA — Linee di indirizzo, Ufficio Informazione sui Medicinali e Vigilanza sulla Pubblicità (24 luglio 2026)</a>.
 
 *Articolo scritto e curato dall'autore con il supporto di Claude (Anthropic).*
