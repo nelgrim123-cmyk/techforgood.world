@@ -5,9 +5,9 @@ permalink: /about/
 ---
 
 <div class="about-hero">
-  <img src="{{ '/assets/images/profile.png' | relative_url }}" alt="Aniello Grimaldi" class="about-photo">
+  <img src="{{ '/assets/images/profile.png' | relative_url }}" alt="Nello Grimaldi" class="about-photo">
   <div class="about-intro">
-    <h2 class="about-name">Aniello Grimaldi</h2>
+    <h2 class="about-name">Nello Grimaldi</h2>
     <p class="about-tagline">Health Technology Expert · Digital Health · Life Sciences</p>
     <a href="https://www.linkedin.com/in/aniellogrimaldi/" target="_blank" rel="noopener" class="about-linkedin">
       Connect on LinkedIn →
