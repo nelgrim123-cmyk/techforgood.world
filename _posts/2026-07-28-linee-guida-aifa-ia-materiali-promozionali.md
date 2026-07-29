@@ -9,44 +9,41 @@ source_url: https://www.aifa.gov.it/-/linee-indirizzo-utilizzo-sistemi-intellige
 source_label: "AIFA — Ufficio Informazione sui Medicinali e Vigilanza sulla Pubblicità"
 ---
 
-Il 24 luglio 2026 l'Ufficio Informazione sui Medicinali e Vigilanza sulla Pubblicità di AIFA ha pubblicato la prima linea di indirizzo sull'uso di sistemi di intelligenza artificiale nei materiali promozionali (MP) rivolti agli operatori sanitari. È un documento sperimentale, quindi destinato ad aggiornamenti, ma già oggi fissa paletti precisi per chi usa IA generativa — o chatbot basati su IA — nella comunicazione scientifica.
+Il 24 luglio 2026 l'AIFA ha pubblicato la prima linea di indirizzo sull'uso di sistemi di intelligenza artificiale nei materiali promozionali (MP) rivolti agli operatori sanitari. È un documento iniziale, quindi destinato ad aggiornamenti, ma già oggi fissa paletti precisi per chi usa IA generativa nella comunicazione scientifica.
 
 Il quadro normativo di riferimento non è nuovo: resta il d.lgs. 219/2006, a cui si aggiungono l'AI Act (Regolamento UE 2024/1689) e il GDPR. Quello che cambia è come applicarli quando un modello genera, revisiona o aggiorna un contenuto promozionale, o quando un assistente virtuale interagisce direttamente con un medico.
 
 ## Cosa copre la linea di indirizzo
 
-Il documento distingue due casi d'uso, entrambi già diffusi nella pratica:
+Il documento distingue due casi d'uso, entrambi già diffusi nella pratica: MP predisposti con supporto di IA generativa, dove il modello assiste nella redazione o revisione dei contenuti, e MP che incorporano sistemi di IA, come chatbot o assistenti virtuali destinati a rispondere agli operatori sanitari.
 
-- **MP predisposti con supporto di IA generativa**, dove il modello assiste nella redazione o revisione dei contenuti
-- **MP che incorporano sistemi di IA**, come chatbot o assistenti virtuali destinati a rispondere agli operatori sanitari
-
-In entrambi i casi resta fermo l'obbligo di deposito presso AIFA dieci giorni prima della divulgazione, e la responsabilità resta interamente in capo al Titolare AIC e al Responsabile del Servizio Scientifico — l'IA non sposta né attenua questa responsabilità.
+In entrambi i casi resta fermo l'obbligo di deposito presso AIFA dieci giorni prima della divulgazione, e la responsabilità resta interamente in capo al Titolare AIC e al Responsabile del Servizio Scientifico. L'IA non sposta né attenua in nessun caso la responsabilità delle persone.
 
 ## I punti operativi che contano davvero
 
-**Nessun contenuto "inventato".** Non è ammesso l'inserimento o la generazione, tramite IA, di contenuti che non derivino direttamente da fonti selezionate e certificate — RCP e bibliografia consentita in primis. Questi documenti vanno allegati alla scheda di deposito con evidenziate le parti effettivamente riprese nel MP.
+**Nessun contenuto "inventato".** Non è ammesso l'inserimento o la generazione, tramite IA, di contenuti che non derivino direttamente da fonti selezionate e certificate, RCP e bibliografia consentita in primis. Questi documenti vanno allegati alla scheda di deposito con evidenziate le parti effettivamente riprese nel MP.
 
 **Tracciabilità delle fonti nei chatbot.** Se un assistente virtuale basato su IA risponde a un operatore sanitario, ogni output deve riportare il link al punto esatto della fonte da cui l'informazione è stata estratta.
 
-**Trasparenza nella scheda di deposito.** Al momento del deposito, l'azienda deve descrivere in dettaglio i modelli di IA usati, le loro funzionalità e le modalità di monitoraggio adottate — e rendere disponibili le credenziali che permettano ad AIFA di verificare direttamente il sistema.
+**Trasparenza nella scheda di deposito.** Al momento del deposito, l'azienda deve descrivere in dettaglio i modelli di IA usati, le loro funzionalità e le modalità di monitoraggio adottate e rendere disponibili le credenziali che permettano ad AIFA di verificare direttamente il sistema.
 
 **Verifica sistematica degli output.** I modelli generativi possono produrre citazioni inesistenti, dati non aggiornati o sintesi infedeli alle fonti. AIFA chiede quindi procedure documentate di verifica rispetto a RCP e letteratura validata, prima dell'approvazione del materiale.
 
-**Human-in-the-loop, non delega.** Il documento è esplicito: l'IA è "esclusivamente uno strumento di supporto" e non può sostituire la supervisione scientifica e regolatoria. Serve personale qualificato coinvolto in ogni fase — predisposizione, verifica, validazione, aggiornamento.
+**Human-in-the-loop, non delega.** Il documento è esplicito: l'IA è "esclusivamente uno strumento di supporto" e non può sostituire la supervisione scientifica e regolatoria. Serve personale qualificato coinvolto in ogni fase predisposizione, verifica, validazione, aggiornamento.
 
-**Disclosure obbligatoria verso il destinatario.** Chi interagisce con un chatbot deve sapere di stare parlando con un sistema di IA. I contenuti generati (testo, immagini, audio, video) devono essere marcati come tali in formato leggibile meccanicamente. Ed è richiesto un disclaimer esplicito sui limiti del modello e sul rischio di errore, con rimando alle fonti ufficiali e all'Informatore Scientifico.
+**Disclosure obbligatoria verso il destinatario.** Chi interagisce con un chatbot deve sapere di stare parlando con un sistema di IA. I contenuti generati devono essere marcati come tali in formato leggibile meccanicamente, con un disclaimer esplicito sui limiti del modello e sul rischio di errore.
 
 **Documentazione tecnica in allegato.** Il RSS deve fornire una dichiarazione sulla validazione dell'algoritmo e sulla vigilanza sugli output, coerente con l'art. 11 dell'AI Act sulla documentazione tecnica dei sistemi ad alto rischio.
 
 **Gestione del rischio e stress test.** In coerenza con gli artt. 9 e 15 dell'AI Act, le aziende devono integrare l'uso dell'IA nel proprio sistema di gestione della qualità: un processo continuo di identificazione, valutazione e mitigazione dei rischi, con prove di robustezza (stress test) sul comportamento del sistema nei diversi scenari d'uso e un monitoraggio periodico documentato.
 
-**Controlli a campione di AIFA.** Anche in assenza di autorizzazione preventiva, l'Ufficio UIMVP può effettuare controlli a campione sui materiali promozionali per verificarne la conformità al Titolo VIII del d.lgs. 219/2006 e alla linea di indirizzo — da qui la raccomandazione di conservare tutta la documentazione del processo di predisposizione del MP.
+**Controlli a campione di AIFA.** Anche in assenza di autorizzazione preventiva, l'Ufficio UIMVP può effettuare controlli a campione sui materiali promozionali per verificarne la conformità al Titolo VIII del d.lgs. 219/2006 e alla linea di indirizzo da qui la raccomandazione di conservare tutta la documentazione del processo di predisposizione del MP.
 
 ## Perché conta oltre la compliance
 
-Questa linea di indirizzo arriva mentre l'uso di IA generativa nei processi commerciali e regolatori del pharma sta smettendo di essere sperimentale (ne avevamo scritto parlando dell'AI nel motore commerciale del settore). AIFA non vieta l'IA nei materiali promozionali — la inquadra. E lo fa chiedendo esattamente ciò che dovrebbe già valere come buona pratica interna: fonti verificabili, supervisione umana reale, tracciabilità end-to-end.
+Questa linea di indirizzo arriva mentre l'uso di IA generativa nei processi commerciali e regolatori del pharma sta smettendo di essere sperimentale. AIFA non vieta l'IA nei materiali promozionali la inquadra. E lo fa chiedendo esattamente ciò che dovrebbe già valere come buona pratica interna: fonti verificabili, supervisione umana reale, tracciabilità end-to-end.
 
-Le aziende che hanno già processi di validazione strutturati per i contenuti promozionali tradizionali troveranno in questo documento un'estensione naturale, non una rivoluzione. Chi invece ha adottato IA generativa in modo informale — senza log delle fonti, senza sign-off documentato — ha ora un gap di compliance da colmare prima del prossimo deposito.
+Le aziende che hanno già processi di validazione strutturati per i contenuti promozionali tradizionali troveranno in questo documento un'estensione naturale, non una rivoluzione. Chi invece ha adottato IA generativa in modo informale senza log delle fonti, senza sign-off documentato ha ora un gap di compliance da colmare prima del prossimo deposito.
 
 ---
 
