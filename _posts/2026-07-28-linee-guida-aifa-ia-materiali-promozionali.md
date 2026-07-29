@@ -4,6 +4,7 @@ categories: [tech-in-pharma]
 read_time: 6
 lang: it
 cover: /assets/images/covers/aifa-ia-materiali-promozionali.png
+image: /assets/images/covers/aifa-ia-materiali-promozionali.png
 source_url: https://www.aifa.gov.it/-/linee-indirizzo-utilizzo-sistemi-intelligenza-artificiale-materiali-promozionali
 source_label: "AIFA — Ufficio Informazione sui Medicinali e Vigilanza sulla Pubblicità"
 ---
