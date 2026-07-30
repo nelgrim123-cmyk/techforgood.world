@@ -5,7 +5,7 @@ read_time: 5
 cover: /assets/images/covers/ai-drug-discovery.png
 ---
 
-The statistic that gets repeated in every R&D conference talk is some version of this: it takes on average over a decade and billions of dollars to bring a new medicine to market, and most candidates fail along the way. AI is regularly framed as the thing that finally breaks that equation. The more accurate framing is narrower, and more useful: AI is not compressing the whole pipeline, it is compressing specific, well-defined pieces of it.
+The statistic that gets repeated in every R&D conference talk is some version of this: it takes on average over a decade and billions of dollars to bring a new medicine to market, and most candidates fail along the way. AI is regularly framed as the thing that finally breaks that equation. The more accurate framing is narrower and more useful: AI is not compressing the whole pipeline, it is compressing specific, well-defined pieces of it.
 
 ## Where the compression is real
 
@@ -15,11 +15,11 @@ Clinical trial design is the other quieter win. Patient matching, site selection
 
 ## Where the hype outruns the reality
 
-Late-stage clinical development — the part of the pipeline that consumes the most time and money — is still governed by biology, regulation, and human physiology, none of which move faster because a model got better. A compound can sail through AI-assisted discovery and still fail in a Phase 3 trial for reasons no algorithm predicted. Anyone promising AI will cut a ten-year pipeline down to two years is either talking about a narrow slice of it, or not being fully honest about where the actual time goes.
+Late-stage clinical development, the part of the pipeline that consumes the most time and money, is still governed by biology, regulation and human physiology, none of which move faster because a model got better. A compound can sail through AI-assisted discovery and still fail in a Phase 3 trial for reasons no algorithm predicted. Anyone promising AI will cut a ten-year pipeline down to two years is either talking about a narrow slice of it, or not being fully honest about where the actual time goes.
 
 ## The realistic version
 
-The more grounded story is a pipeline where each stage gets somewhat faster and somewhat more efficient, compounding into a meaningful — but not miraculous — overall gain. That is a less exciting pitch than "AI cures cancer twice as fast." It also happens to be the version that is actually happening.
+The more grounded story is a pipeline where each stage gets somewhat faster and somewhat more efficient, compounding into a meaningful overall gain but still not miraculous. 
 
 ---
 
