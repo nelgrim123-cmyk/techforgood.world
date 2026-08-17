@@ -13,4 +13,11 @@ Most of the conversation about AI in pharma is about drug discovery. Less visibl
 
 This pillar covers where AI is genuinely changing that operation: moving processes from reactive to predictive, and the trust and governance questions that come with automating decisions that carry real regulatory and financial risk.
 
-One prototype in this space: [PharmaPlanning](/pharmaplanning/), a statistical model that forecasts short-term regional drug demand in Italy from open AIFA and ISTAT data.
+## Tools
+
+<a class="post-card" href="/planpharma/" style="max-width:420px;border:1px solid var(--border);">
+<span class="tag tag--tech-in-pharma">Prototype</span>
+<h3>PlanPharma</h3>
+<p>Regional drug-demand forecasting, built on open AIFA and ISTAT data.</p>
+<span class="meta">Try it &rarr;</span>
+</a>
