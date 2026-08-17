@@ -1,19 +1,19 @@
 ---
 layout: page
-title: PharmaPlanning
-permalink: /pharmaplanning/
+title: PlanPharma
+permalink: /planpharma/
 ---
 
 <div class="about-hero">
   <div class="about-intro">
       <p class="about-tagline">Regional drug-demand forecasting for Italy, built on AIFA and ISTAT open data</p>
-          <a href="https://pharmaplanning-techforgood.streamlit.app" target="_blank" rel="noopener" class="about-linkedin">Open PharmaPlanning &rarr;</a>
+          <a href="https://pharmaplanning-techforgood.streamlit.app" target="_blank" rel="noopener" class="about-linkedin">Open PlanPharma &rarr;</a>
             </div>
             </div>
 
 ## What it does
 
-PharmaPlanning is a working prototype that forecasts short-term regional demand for pharmaceutical distribution channels in Italy, using open data from AIFA (packages dispensed by region, category and distribution channel) and ISTAT (population and demographic trends).
+PlanPharma is a working prototype that forecasts short-term regional demand for pharmaceutical distribution channels in Italy, using open data from AIFA (packages dispensed by region, category and distribution channel) and ISTAT (population and demographic trends).
 
 - Statistical forecast (Holt-Winters) by region and therapeutic area, up to 12 months ahead
 - Historical analysis: year-over-year trends, category mix shifts, and distribution channel breakdown
@@ -27,6 +27,6 @@ Demand planning in pharma distribution is still largely reactive. This tool expl
 
 The app is free to use and requires no login.
 
-<a href="https://pharmaplanning-techforgood.streamlit.app" target="_blank" rel="noopener" class="about-linkedin">Open PharmaPlanning &rarr;</a>
+<a href="https://pharmaplanning-techforgood.streamlit.app" target="_blank" rel="noopener" class="about-linkedin">Open PlanPharma &rarr;</a>
 
 *A prototype under active development, feedback welcome.*
