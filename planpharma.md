@@ -15,9 +15,10 @@ permalink: /planpharma/
 
 PlanPharma is a working prototype that forecasts short-term regional demand for pharmaceutical distribution channels in Italy, using open data from AIFA (packages dispensed by region, category and distribution channel) and ISTAT (population and demographic trends).
 
-- Statistical forecast (Holt-Winters) by region and therapeutic area, up to 12 months ahead
+- Category selection at two levels: AIFA/OsMed's official therapeutic area naming, and the specific ATC classification underneath it
+- Statistical forecast, up to 12 months ahead, automatically chosen per region/category by backtest between Holt-Winters and a SARIMAX model with calendar, seasonal and regional demographic regressors
 - Historical analysis: year-over-year trends, category mix shifts, and distribution channel breakdown
-- Built entirely on public, open datasets, no proprietary or patient data involved
+- Built entirely on public, open datasets (AIFA, ISTAT), no proprietary or patient data involved
 
 ## Why it matters
 
