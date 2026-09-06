@@ -17,7 +17,7 @@ This pillar covers where AI is genuinely changing that operation: moving process
 
 <div class="post-card" style="max-width:420px;border:1px solid var(--border);">
 <span class="tag tag--tech-in-pharma">Prototype</span>
-<h3>PharmaPlanTest</h3>
+<h3><a href="https://pharmaplanning-techforgood.streamlit.app" class="meta" style="color:inherit;">PharmaPlanTest</a></h3>
 <p>Regional drug-demand forecasting, built on open AIFA and ISTAT data.</p>
-<a href="/planpharma/" class="meta">Try it &rarr;</a>
+<a href="https://pharmaplanning-techforgood.streamlit.app" class="meta">Try it &rarr;</a>
 </div>
