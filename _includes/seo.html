@@ -1,0 +1,153 @@
+{%- comment -%}
+  SEO head: title, description, canonical, Open Graph, Twitter, JSON-LD.
+  Replaces jekyll-seo-tag so structured data (Person, Article,
+  BreadcrumbList, CollectionPage) is complete and not duplicated.
+{%- endcomment -%}
+{%- assign page_lang = page.lang | default: site.lang | default: "en" -%}
+{%- if page.url == "/" -%}
+  {%- assign seo_title = site.title | append: " — " | append: site.tagline -%}
+{%- elsif page.seo_title -%}
+  {%- assign seo_title = page.seo_title | append: " — " | append: site.title -%}
+{%- else -%}
+  {%- assign seo_title = page.title | append: " — " | append: site.title -%}
+{%- endif -%}
+{%- if page.description -%}
+  {%- assign seo_desc = page.description | strip_html | strip_newlines | strip -%}
+{%- elsif page.excerpt -%}
+  {%- assign seo_desc = page.excerpt | strip_html | strip_newlines | strip | truncate: 160 -%}
+{%- else -%}
+  {%- assign seo_desc = site.description | strip_newlines | strip -%}
+{%- endif -%}
+{%- assign seo_image = page.image | default: page.cover | default: site.default_image | absolute_url -%}
+{%- assign canonical = page.canonical_url | default: page.url | replace: "index.html", "" | absolute_url -%}
+{%- assign person_id = site.url | append: "/#person" -%}
+{%- assign website_id = site.url | append: "/#website" -%}
+{%- assign cat = page.categories | first -%}
+{%- assign pillar = site.pillars[cat] -%}
+{%- if page.date -%}
+  {%- assign modified = page.last_modified_at | default: page.date -%}
+{%- endif -%}
+  <title>{{ seo_title | escape }}</title>
+  <meta name="description" content="{{ seo_desc | escape }}">
+  <meta name="author" content="{{ site.author.name }}">
+  <link rel="canonical" href="{{ canonical }}">
+  <meta name="robots" content="{% if page.sitemap == false %}noindex, follow{% else %}index, follow, max-image-preview:large, max-snippet:-1{% endif %}">
+  {%- if site.google_site_verification != "" %}
+  <meta name="google-site-verification" content="{{ site.google_site_verification }}">
+  {%- endif %}
+  {%- if site.bing_site_verification != "" %}
+  <meta name="msvalidate.01" content="{{ site.bing_site_verification }}">
+  {%- endif %}
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:locale" content="{% if page_lang == 'it' %}it_IT{% else %}en_US{% endif %}">
+  <meta property="og:type" content="{{ page.og_type | default: 'website' }}">
+  <meta property="og:title" content="{{ page.title | default: site.title | escape }}">
+  <meta property="og:description" content="{{ seo_desc | escape }}">
+  <meta property="og:url" content="{{ canonical }}">
+  <meta property="og:image" content="{{ seo_image }}">
+  {%- if page.date %}
+  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+  <meta property="article:modified_time" content="{{ modified | date_to_xmlschema }}">
+  <meta property="article:author" content="{{ site.author.linkedin }}">
+  {%- if pillar %}<meta property="article:section" content="{{ pillar.name }}">{% endif %}
+  {%- for t in page.tags %}
+  <meta property="article:tag" content="{{ t }}">
+  {%- endfor %}
+  {%- endif %}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.title | default: site.title | escape }}">
+  <meta name="twitter:description" content="{{ seo_desc | escape }}">
+  <meta name="twitter:image" content="{{ seo_image }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | absolute_url }}">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": {{ person_id | jsonify }},
+      "name": {{ site.author.name | jsonify }},
+      "alternateName": {{ site.author.full_name | jsonify }},
+      "jobTitle": {{ site.author.job_title | jsonify }},
+      "url": {{ site.author.url | jsonify }},
+      "image": {{ site.author.image | absolute_url | jsonify }},
+      "email": {{ site.author.email | prepend: "mailto:" | jsonify }},
+      "sameAs": [{{ site.author.linkedin | jsonify }}],
+      "knowsAbout": {{ site.author.knows_about | jsonify }}
+    },
+    {
+      "@type": "WebSite",
+      "@id": {{ website_id | jsonify }},
+      "url": {{ site.url | append: "/" | jsonify }},
+      "name": {{ site.title | jsonify }},
+      "description": {{ site.description | strip_newlines | strip | jsonify }},
+      "inLanguage": ["en", "it"],
+      "publisher": { "@id": {{ person_id | jsonify }} },
+      "about": [
+        { "@type": "Thing", "name": "Digital health" },
+        { "@type": "Thing", "name": "Pharmaceutical industry" },
+        { "@type": "Thing", "name": "Artificial intelligence in healthcare" }
+      ]
+    }
+    {%- if page.layout == "post" -%},
+    {
+      "@type": "Article",
+      "@id": {{ canonical | append: "#article" | jsonify }},
+      "headline": {{ page.title | jsonify }},
+      "description": {{ seo_desc | jsonify }},
+      "image": {{ seo_image | jsonify }},
+      "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+      "dateModified": {{ modified | date_to_xmlschema | jsonify }},
+      "inLanguage": {{ page_lang | jsonify }},
+      "author": { "@id": {{ person_id | jsonify }} },
+      "publisher": { "@id": {{ person_id | jsonify }} },
+      "isPartOf": { "@id": {{ website_id | jsonify }} },
+      "mainEntityOfPage": {{ canonical | jsonify }},
+      {%- if pillar %}
+      "articleSection": {{ pillar.name | jsonify }},
+      {%- endif %}
+      {%- if page.tags and page.tags != empty %}
+      "keywords": {{ page.tags | join: ", " | jsonify }},
+      "about": [{% for t in page.tags %}{ "@type": "Thing", "name": {{ t | jsonify }} }{% unless forloop.last %}, {% endunless %}{% endfor %}],
+      {%- endif %}
+      {%- if page.sources and page.sources != empty %}
+      "citation": [{% for s in page.sources %}{ "@type": "CreativeWork", "name": {{ s.title | jsonify }}, "url": {{ s.url | jsonify }} }{% unless forloop.last %}, {% endunless %}{% endfor %}],
+      {%- endif %}
+      "wordCount": {{ content | strip_html | number_of_words }}
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": {{ site.url | append: "/" | jsonify }} }
+        {%- if pillar -%},
+        { "@type": "ListItem", "position": 2, "name": {{ pillar.name | jsonify }}, "item": {{ pillar.url | absolute_url | jsonify }} },
+        { "@type": "ListItem", "position": 3, "name": {{ page.title | jsonify }}, "item": {{ canonical | jsonify }} }
+        {%- else -%},
+        { "@type": "ListItem", "position": 2, "name": {{ page.title | jsonify }}, "item": {{ canonical | jsonify }} }
+        {%- endif %}
+      ]
+    }
+    {%- elsif page.url != "/" and page.title -%},
+    {
+      "@type": {% if page.layout == "pillar" or page.layout == "archive" %}"CollectionPage"{% elsif page.url == "/about/" %}"ProfilePage"{% else %}"WebPage"{% endif %},
+      "@id": {{ canonical | append: "#webpage" | jsonify }},
+      "url": {{ canonical | jsonify }},
+      "name": {{ page.title | jsonify }},
+      "description": {{ seo_desc | jsonify }},
+      "inLanguage": {{ page_lang | jsonify }},
+      "isPartOf": { "@id": {{ website_id | jsonify }} }
+      {%- if page.url == "/about/" -%},
+      "mainEntity": { "@id": {{ person_id | jsonify }} }
+      {%- endif %}
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": {{ site.url | append: "/" | jsonify }} },
+        { "@type": "ListItem", "position": 2, "name": {{ page.title | jsonify }}, "item": {{ canonical | jsonify }} }
+      ]
+    }
+    {%- endif %}
+  ]
+}
+  </script>

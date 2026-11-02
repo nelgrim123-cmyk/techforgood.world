@@ -35,16 +35,39 @@ Crea un file in `_posts/` con nome `AAAA-MM-GG-titolo-breve.md`:
 
 ```yaml
 ---
-title: "Il titolo del tuo articolo"
-categories: [digital-point-of-care]   # oppure tech-in-pharma / ai-powered-rd
-read_time: 5
+title: "Titolo completo dell'articolo"
+seo_title: "Titolo breve per Google (max ~60 caratteri)"
+description: "Riassunto per Google e social, 120-160 caratteri"
+categories: [tech-in-pharma]   # digital-point-of-care / tech-in-pharma / ai-powered-rd
+tags: [AIFA, OsMed, Spesa farmaceutica]   # 3-6 temi, riusa quelli esistenti
+lang: it                        # it o en
+read_time: 6
+cover: /assets/images/covers/nome-file.png
+cover_alt: "Descrizione dell'immagine"
+last_modified_at: 2026-11-02    # solo se aggiorni l'articolo
+key_points:                     # box "In sintesi" in cima
+  - "Punto chiave 1"
+  - "Punto chiave 2"
+sources:                        # box "Fonti" in fondo + dati strutturati
+  - title: "Nome del documento"
+    url: "https://..."
+    publisher: "Ente"
 ---
 
 Il contenuto in Markdown...
 ```
 
-L'articolo appare automaticamente in home, nell'archivio (`/articles/`) e
-nella pagina del pilastro corrispondente.
+L'articolo appare automaticamente in home, archivio, pagina del pilastro,
+pagina Topics, `llms.txt`, sitemap e feed RSS.
+
+Nuovi termini del glossario: aggiungili in `_data/glossary.yml`.
+Nuove fonti ufficiali: `_data/resources.yml`.
+
+## 3b. Dopo la pubblicazione (una sola volta)
+
+- Google Search Console: verifica il dominio, incolla il codice in
+  `google_site_verification` di `_config.yml`, invia `sitemap.xml`
+- Bing Webmaster Tools: idem con `bing_site_verification`
 
 ## 4. Prima di pubblicare
 

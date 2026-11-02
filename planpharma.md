@@ -2,6 +2,7 @@
 layout: page
 title: PharmaPlanTest
 permalink: /planpharma/
+description: "PharmaPlanTest: open prototype forecasting regional pharmaceutical demand in Italy from AIFA and ISTAT open data, with Holt-Winters and SARIMAX models."
 ---
 
 <div class="about-hero">

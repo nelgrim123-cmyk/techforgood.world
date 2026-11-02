@@ -8,12 +8,13 @@ layout: default
   <div class="wrap">
     <div class="article-list">
       {% for post in site.posts %}
-      <a class="article-row" href="{{ post.url | relative_url }}">
+      {%- assign pcat = post.categories | first -%}
+      <a class="article-row" href="{{ post.url | relative_url }}"{% if post.lang %} hreflang="{{ post.lang }}"{% endif %}>
         <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
         <div>
-          <span class="tag">{{ post.categories | first | replace: '-', ' ' }}</span>
+          <span class="tag tag--{{ pcat }}">{{ site.pillars[pcat].name }}{% if post.lang == 'it' %} · IT{% endif %}</span>
           <h3>{{ post.title }}</h3>
-          <p>{{ post.excerpt | strip_html | truncatewords: 28 }}</p>
+          <p>{{ post.description | default: post.excerpt | strip_html | truncatewords: 28 }}</p>
         </div>
       </a>
       {% endfor %}

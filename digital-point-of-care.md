@@ -1,6 +1,7 @@
 ---
 layout: pillar
 title: Digital Point of Care
+seo_title: "Digital Point of Care: EHR, interoperability and care coordination"
 eyebrow: Pillar
 category: digital-point-of-care
 permalink: /digital-point-of-care/

@@ -35,6 +35,37 @@ layout: default
   </div>
 </section>
 
+<section class="pillar-articles latest-home">
+  <div class="wrap">
+    <h2 class="section-label">Latest analysis</h2>
+    <div class="card-grid">
+      {% for post in site.posts limit: 6 %}
+      {%- assign pcat = post.categories | first -%}
+      <a class="post-card" href="{{ post.url | relative_url }}" {% if post.lang %}hreflang="{{ post.lang }}"{% endif %}>
+        {% if post.cover %}<img class="post-card-cover" src="{{ post.cover | relative_url }}" alt="" loading="lazy">{% endif %}
+        <span class="tag tag--{{ pcat }}">{{ site.pillars[pcat].name }}{% if post.lang == 'it' %} · IT{% endif %}</span>
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.description | default: post.excerpt | strip_html | truncatewords: 22 }}</p>
+        <span class="meta">{% if post.read_time %}{{ post.read_time }} min · {% endif %}{{ post.date | date: "%b %Y" }}</span>
+      </a>
+      {% endfor %}
+    </div>
+    <p class="see-all"><a href="{{ '/articles/' | relative_url }}">All articles &rarr;</a></p>
+  </div>
+</section>
+
+<section class="knowledge-hub">
+  <div class="wrap">
+    <h2 class="section-label">Knowledge hub</h2>
+    <div class="hub-grid">
+      <a class="hub-card" href="{{ '/glossary/' | relative_url }}"><h3>Glossary</h3><p>Plain-language definitions of pharma, regulatory and digital health terms: AIFA, OsMed, ATC, DDD, EHR, FHIR.</p></a>
+      <a class="hub-card" href="{{ '/topics/' | relative_url }}"><h3>Topics</h3><p>Every article grouped by subject: pharmaceutical spending, AI regulation, interoperability, R&amp;D.</p></a>
+      <a class="hub-card" href="{{ '/resources/' | relative_url }}"><h3>Resources</h3><p>Curated official data sources and regulations: AIFA, ISTAT, EMA, ECDC, EU AI Act, EHDS.</p></a>
+      <a class="hub-card" href="{{ '/planpharma/' | relative_url }}"><h3>PharmaPlanTest</h3><p>Open prototype forecasting regional drug demand in Italy from AIFA and ISTAT open data.</p></a>
+    </div>
+  </div>
+</section>
+
 <section class="about-teaser">
   <div class="wrap about-teaser-inner">
     <img class="about-teaser-photo" src="{{ '/assets/images/profile.png' | relative_url }}" alt="Nello Grimaldi">

@@ -1,8 +1,17 @@
 ---
 title: "EHR interoperability: the unglamorous problem still shaping patient experience"
+seo_title: "EHR interoperability and the patient experience"
+description: "Why electronic health record (EHR) interoperability and scheduling still shape the patient experience, and what good point-of-care technology looks like."
 categories: [digital-point-of-care]
+tags: [EHR, Interoperability, Patient scheduling, Digital health]
 read_time: 4
+lang: en
 cover: /assets/images/covers/ehr-interoperability.jpeg
+cover_alt: "Illustration of connected electronic health records"
+key_points:
+  - "Most hospitals have an EHR (electronic health record), yet patient data still rarely follows the patient between providers."
+  - "Scheduling is the patient's first contact with an institution's digital maturity."
+  - "Good point-of-care technology is invisible: the record is complete at the moment of care."
 ---
 
 Every hospital has an electronic health record system. Most patients still repeat their medical history at every new front desk. That gap between having the technology and having it actually working is where digital health so often stalls.

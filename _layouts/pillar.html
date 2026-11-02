@@ -21,11 +21,11 @@ layout: default
     <div class="card-grid">
       {% assign posts = site.posts | where_exp: "post", "post.categories contains page.category" %}
       {% for post in posts %}
-      <a class="post-card" href="{{ post.url | relative_url }}">
-        {% if post.cover %}<img class="post-card-cover" src="{{ post.cover | relative_url }}" alt="{{ post.title }}">{% endif %}
-        <span class="tag tag--{{ page.category }}">{{ post.categories | first | replace: '-', ' ' }}</span>
+      <a class="post-card" href="{{ post.url | relative_url }}"{% if post.lang %} hreflang="{{ post.lang }}"{% endif %}>
+        {% if post.cover %}<img class="post-card-cover" src="{{ post.cover | relative_url }}" alt="" loading="lazy">{% endif %}
+        <span class="tag tag--{{ page.category }}">{{ page.title }}{% if post.lang == 'it' %} · IT{% endif %}</span>
         <h3>{{ post.title }}</h3>
-        <p>{{ post.excerpt | strip_html | truncatewords: 22 }}</p>
+        <p>{{ post.description | default: post.excerpt | strip_html | truncatewords: 22 }}</p>
         <span class="meta">{% if post.read_time %}{{ post.read_time }} min read · {% endif %}{{ post.date | date: "%b %Y" }}</span>
       </a>
       {% endfor %}

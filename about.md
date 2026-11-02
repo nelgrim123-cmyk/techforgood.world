@@ -1,7 +1,9 @@
 ---
 layout: page
 title: About
+seo_title: "About Nello Grimaldi"
 permalink: /about/
+description: "Nello Grimaldi (Aniello Grimaldi): health technology advisor in life sciences, pharma revenue management and digital health. Author of Tech for Good."
 ---
 
 <div class="about-hero">

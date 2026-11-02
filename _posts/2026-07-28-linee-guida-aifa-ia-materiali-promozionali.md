@@ -1,11 +1,22 @@
 ---
 title: "Linee guida AIFA sull'uso dell'IA nei materiali promozionali: cosa cambia per le aziende farmaceutiche"
+seo_title: "Linee guida AIFA sull'IA nei materiali promozionali"
+description: "Linee di indirizzo AIFA del 24 luglio 2026 sull'intelligenza artificiale nei materiali promozionali: obblighi, tracciabilità delle fonti, AI Act."
 categories: [tech-in-pharma]
+tags: [AIFA, AI Act, Materiali promozionali, IA generativa, Compliance farmaceutica]
 read_time: 6
 lang: it
 cover: /assets/images/covers/aifa-ia-materiali-promozionali.png
-source_url: https://www.aifa.gov.it/-/linee-indirizzo-utilizzo-sistemi-intelligenza-artificiale-materiali-promozionali
-source_label: "AIFA — Ufficio Informazione sui Medicinali e Vigilanza sulla Pubblicità"
+cover_alt: "Linee guida AIFA sull'intelligenza artificiale nei materiali promozionali"
+key_points:
+  - "AIFA non vieta l'IA nei materiali promozionali (MP): la inquadra in d.lgs. 219/2006, AI Act e GDPR."
+  - "Ammessi solo contenuti derivati da fonti selezionate e certificate; nei chatbot ogni risposta deve linkare la fonte esatta."
+  - "La responsabilità resta al Titolare AIC (Autorizzazione all'Immissione in Commercio) e al Responsabile del Servizio Scientifico."
+  - "Obbligatori supervisione umana, disclosure verso l'operatore sanitario, risk management e stress test."
+sources:
+  - title: "Linee di indirizzo sull'utilizzo di sistemi di intelligenza artificiale nei materiali promozionali (24 luglio 2026)"
+    url: "https://www.aifa.gov.it/-/linee-indirizzo-utilizzo-sistemi-intelligenza-artificiale-materiali-promozionali"
+    publisher: "AIFA — Ufficio Informazione sui Medicinali e Vigilanza sulla Pubblicità"
 ---
 
 Il 24 luglio 2026 l'AIFA ha pubblicato la prima linea di indirizzo sull'uso di sistemi di intelligenza artificiale nei materiali promozionali (MP) rivolti agli operatori sanitari. È un documento iniziale, quindi destinato ad aggiornamenti, ma già oggi fissa paletti precisi per chi usa IA generativa nella comunicazione scientifica.
@@ -46,10 +57,8 @@ Le aziende che hanno già processi di validazione strutturati per i contenuti pr
 
 La tecnologia in un settore come questo non si può bloccare per decreto, e onestamente non credo nemmeno che lo si dovrebbe volere: la quantità di letteratura scientifica che un informatore scientifico o un medical writer deve tenere sotto controllo oggi supera già da tempo la capacità di lettura di una singola persona. Il punto non è se usare l'IA, ma come.
 
-Ed è esattamente quello che l'AIFA chiede:fonti verificabili invece del divieto, supervisione umana reale invece del liberi tutti, tracciabilità end-to-end invece della fiducia cieca nel modello. Un'IA integrata così, in modo controllato, etico e funzionale, è probabilmente l'unico modo perché questo tipo di adozione regga nel tempo, in un settore dove un errore non resta confinato a una brutta esperienza di acquisto ma può avere consequenze sulla salute delle persone.
+Ed è esattamente quello che l'AIFA chiede: fonti verificabili invece del divieto, supervisione umana reale invece del liberi tutti, tracciabilità end-to-end invece della fiducia cieca nel modello. Un'IA integrata così, in modo controllato, etico e funzionale, è probabilmente l'unico modo perché questo tipo di adozione regga nel tempo, in un settore dove un errore non resta confinato a una brutta esperienza di acquisto ma può avere conseguenze sulla salute delle persone.
 
 ---
-
-**Fonte:** <a href="https://www.aifa.gov.it/-/linee-indirizzo-utilizzo-sistemi-intelligenza-artificiale-materiali-promozionali" target="_blank" rel="noopener">AIFA — Linee di indirizzo, Ufficio Informazione sui Medicinali e Vigilanza sulla Pubblicità (24 luglio 2026)</a>.
 
 *Articolo scritto e curato dall'autore con il supporto di Claude (Anthropic).*

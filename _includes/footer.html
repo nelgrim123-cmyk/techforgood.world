@@ -1,19 +1,25 @@
 <footer class="site-footer">
   <div class="wrap footer-top">
     <a class="footer-brand" href="{{ '/' | relative_url }}">
-      <img src="{{ '/assets/images/logo-mark.svg' | relative_url }}" alt="Tech for Good">
+      <img src="{{ '/assets/images/logo-mark.svg' | relative_url }}" alt="" width="30" height="30">
       <span>Tech for Good</span>
     </a>
-    <nav class="footer-nav">
+    <nav class="footer-nav" aria-label="Footer">
       <a href="{{ '/digital-point-of-care/' | relative_url }}">Digital Point of Care</a>
       <a href="{{ '/tech-in-pharma/' | relative_url }}">Tech in Pharma</a>
       <a href="{{ '/ai-powered-rd/' | relative_url }}">AI-Powered R&amp;D</a>
+      <a href="{{ '/articles/' | relative_url }}">Articles</a>
+      <a href="{{ '/topics/' | relative_url }}">Topics</a>
+      <a href="{{ '/glossary/' | relative_url }}">Glossary</a>
+      <a href="{{ '/resources/' | relative_url }}">Resources</a>
+      <a href="{{ '/planpharma/' | relative_url }}">PharmaPlanTest</a>
       <a href="{{ '/about/' | relative_url }}">About</a>
+      <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
     </nav>
     <div class="footer-contact">
-      <a href="https://www.linkedin.com/in/aniellogrimaldi/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="mailto:hello@techforgood.world">hello@techforgood.world</a>
+      <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener me">LinkedIn</a>
+      <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
     </div>
   </div>
-  <p class="footer-copy wrap">&copy; {{ site.time | date: "%Y" }} Aniello Grimaldi. Tech for Good.</p>
+  <p class="footer-copy wrap">&copy; {{ site.time | date: "%Y" }} Aniello Grimaldi. Tech for Good. Content is informational and not medical advice.</p>
 </footer>

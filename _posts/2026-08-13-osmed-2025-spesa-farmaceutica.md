@@ -1,11 +1,22 @@
 ---
 title: "OsMed 2025: la spesa sale, i prezzi scendono. Il rapporto non lo spiega, ma i dati sì"
+seo_title: "Rapporto OsMed 2025: spesa farmaceutica ed effetto mix"
+description: "Analisi del Rapporto OsMed 2025 di AIFA: spesa a 39,3 miliardi (+6,0%), effetto mix +4,7%, divari regionali, farmaci innovativi e proposte predittive."
 categories: [tech-in-pharma]
+tags: [AIFA, OsMed, Spesa farmaceutica, Effetto mix, Biosimilari, Farmaci innovativi, Real World Evidence]
 read_time: 9
 lang: it
 cover: /assets/images/covers/osmed-2025-aifa.png
-source_url: https://www.aifa.gov.it/
-source_label: "AIFA — Rapporto Nazionale OsMed 2025 (ed. luglio 2026)"
+cover_alt: "Rapporto OsMed 2025 sulla spesa farmaceutica in Italia"
+key_points:
+  - "Spesa farmaceutica 2025: 39,3 miliardi di euro, +6,0% sul 2024."
+  - "Spesa territoriale +5,0%: quantità +0,7%, prezzi -0,4%, mix +4,7%. A muovere la spesa è il mix."
+  - "Spesa pro capite classe A convenzionata: da 208 euro (Campania) a 129,7 euro (PA Bolzano)."
+  - "Terapie avanzate (ATMP) da 1,4 milioni (2019) a 222,6 milioni di euro (2025), mentre il Fondo farmaci innovativi viene ridotto."
+sources:
+  - title: "Rapporto Nazionale OsMed 2025 — L'uso dei farmaci in Italia (ed. luglio 2026)"
+    url: "https://www.aifa.gov.it/"
+    publisher: "AIFA — Osservatorio Nazionale sull'impiego dei Medicinali"
 ---
 
 Il nuovo Rapporto OsMed di AIFA (Agenzia Italiana del Farmaco) fotografa un 2025 in cui la spesa farmaceutica italiana ha raggiunto 39,3 miliardi di euro, il 6,0% in più rispetto al 2024. È il tipo di numero che finisce nei titoli come un allarme sui costi della sanità. Letto così, però, non dice quasi nulla — o peggio, suggerisce la spiegazione sbagliata.
@@ -33,7 +44,5 @@ Il caso dei biosimilari, in fondo, è la prova che questo tipo di cambiamento è
 Il Rapporto OsMed 2025 non è, alla fine, un rapporto sui farmaci. È la prova che il sistema sanitario italiano genera ogni anno più dati di quanti ne riesca a trasformare in decisioni anticipate — a partire dal dato più semplice e più trascurato di tutti: che a far salire la spesa non è mai stato il prezzo, è sempre stato il mix. La domanda per il prossimo anno non è se la spesa farmaceutica continuerà a crescere. Lo farà, con ogni probabilità, perché la traiettoria dell'innovazione clinica non si inverte per legge di bilancio. La domanda è se useremo i dati che già abbiamo per capire in anticipo dove si sposterà il paniere, o se continueremo a scoprirlo un anno dopo, quando il rapporto successivo lo certificherà.
 
 ---
-
-**Fonte:** <a href="https://www.aifa.gov.it/" target="_blank" rel="noopener">AIFA — Rapporto Nazionale OsMed 2025 (ed. luglio 2026)</a>.
 
 *Articolo scritto e curato dall'autore con il supporto di Claude (Anthropic).*

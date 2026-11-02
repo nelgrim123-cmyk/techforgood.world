@@ -1,0 +1,53 @@
+- group: "Italian pharmaceutical data"
+  items:
+    - name: "AIFA — Agenzia Italiana del Farmaco"
+      url: https://www.aifa.gov.it/
+      note: "Italian Medicines Agency: authorisations, reimbursement decisions, reports."
+    - name: "OsMed Interattivo (AIFA)"
+      url: https://www.aifa.gov.it/osmed-interattivo
+      note: "Spending and consumption by therapeutic category, region and channel."
+    - name: "Liste di trasparenza (AIFA)"
+      url: https://www.aifa.gov.it/liste-di-trasparenza
+      note: "Reference prices of off-patent medicines by package."
+    - name: "Farmaci carenti (AIFA)"
+      url: https://www.aifa.gov.it/farmaci-carenti
+      note: "Official list of medicine shortages, downloadable as CSV with ATC codes."
+- group: "Population and epidemiology"
+  items:
+    - name: "ISTAT — mortality data"
+      url: https://www.istat.it/notizia/dati-di-mortalita-cosa-produce-listat/
+      note: "Monthly regional deaths, used as a proxy for epidemic pressure."
+    - name: "ISTAT — Istituto Nazionale di Statistica"
+      url: https://www.istat.it/
+      note: "Population, ageing and regional demographic data."
+    - name: "ECDC — European Centre for Disease Prevention and Control"
+      url: https://www.ecdc.europa.eu/
+      note: "EU surveillance of infectious and respiratory diseases."
+- group: "Classifications and standards"
+  items:
+    - name: "WHO ATC/DDD Index"
+      url: https://atcddd.fhi.no/
+      note: "Official ATC codes and Defined Daily Doses."
+    - name: "HL7 FHIR"
+      url: https://hl7.org/fhir/
+      note: "Health data interoperability standard."
+    - name: "Fascicolo Sanitario Elettronico"
+      url: https://www.fascicolosanitario.gov.it/
+      note: "Italy's national electronic health file."
+- group: "Regulation"
+  items:
+    - name: "EU AI Act — Regulation (EU) 2024/1689"
+      url: https://eur-lex.europa.eu/eli/reg/2024/1689/oj
+      note: "Rules for AI systems, including high-risk obligations."
+    - name: "European Health Data Space — Regulation (EU) 2025/327"
+      url: https://eur-lex.europa.eu/eli/reg/2025/327/oj
+      note: "Primary and secondary use of health data in the EU."
+    - name: "GDPR — Regulation (EU) 2016/679"
+      url: https://eur-lex.europa.eu/eli/reg/2016/679/oj
+      note: "Personal and health data protection."
+    - name: "EMA — European Medicines Agency"
+      url: https://www.ema.europa.eu/
+      note: "Centralised EU authorisation, orphan and advanced therapy designations."
+    - name: "Ministero della Salute"
+      url: https://www.salute.gov.it/
+      note: "Italian Ministry of Health."

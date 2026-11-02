@@ -1,6 +1,7 @@
 ---
 layout: pillar
 title: AI-Powered R&D
+seo_title: "AI-Powered R&D: AI in drug discovery and clinical trials"
 eyebrow: Pillar
 category: ai-powered-rd
 permalink: /ai-powered-rd/

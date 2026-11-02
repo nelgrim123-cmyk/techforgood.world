@@ -1,8 +1,17 @@
 ---
 title: "Where AI is actually landing in pharma's commercial engine"
+seo_title: "AI in pharma commercial operations: pricing, rebates, market access"
+description: "How AI is changing pharma pricing, contracting, rebates and market access: from reactive to predictive operations, with humans still accountable for sign-off."
 categories: [tech-in-pharma]
+tags: [AI in pharma, Pricing, Rebates, Market access, Contract management]
 read_time: 5
+lang: en
 cover: /assets/images/covers/ai-commercial-pharma.jpeg
+cover_alt: "Illustration of AI applied to pharmaceutical commercial operations"
+key_points:
+  - "The less visible AI shift in pharma is commercial: pricing, contracting, rebates and market access."
+  - "Predictive models and anomaly detection move work from after-the-fact audits to early warnings."
+  - "The real constraint is trust: AI does the computation, a human signs off."
 ---
 
 Ask ten people in pharma where AI is having an impact and most will point to drug discovery. But the less visible it is the shift happening on the commercial side: pricing, contracting, rebates, and market access that determines whether an approved medicine actually reaches patients at a viable price.

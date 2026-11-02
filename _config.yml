@@ -1,10 +1,49 @@
 title: "Tech for Good"
 tagline: "How technology can improve the impact of healthcare"
 description: >-
-  Notes on how digital health, AI and data are reshaping care delivery,
-  the pharma industry and biomedical research.
+  Knowledge hub on digital health, pharma technology and AI in healthcare:
+  AIFA and OsMed data, EHR interoperability, pharma commercial operations,
+  regulation and AI-powered R&D.
 url: "https://techforgood.world"
 baseurl: ""
+lang: en
+
+author:
+  name: "Nello Grimaldi"
+  full_name: "Aniello Grimaldi"
+  job_title: "Health Technology Advisor · Digital Health · Life Sciences"
+  url: "https://techforgood.world/about/"
+  image: "/assets/images/profile.png"
+  linkedin: "https://www.linkedin.com/in/aniellogrimaldi/"
+  email: "hello@techforgood.world"
+  knows_about:
+    - "Digital health"
+    - "Pharmaceutical industry"
+    - "Pharmaceutical pricing and market access"
+    - "Revenue management in life sciences"
+    - "Electronic health records"
+    - "Artificial intelligence in healthcare"
+    - "Pharmaceutical demand forecasting"
+    - "AIFA and OsMed data"
+
+logo: /assets/images/logo-mark.svg
+default_image: /assets/images/og-image.png
+
+# Search Console / Bing verification (fill in the codes when available)
+google_site_verification: ""
+bing_site_verification: ""
+
+# Pillars (single source of truth for names, used by layouts)
+pillars:
+  digital-point-of-care:
+    name: "Digital Point of Care"
+    url: /digital-point-of-care/
+  tech-in-pharma:
+    name: "Tech in Pharma"
+    url: /tech-in-pharma/
+  ai-powered-rd:
+    name: "AI-Powered R&D"
+    url: /ai-powered-rd/
 
 markdown: kramdown
 permalink: /:categories/:title/
@@ -15,13 +54,26 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      og_type: "article"
 
 plugins:
   - jekyll-feed
-  - jekyll-seo-tag
   - jekyll-sitemap
+
+feed:
+  categories:
+    - digital-point-of-care
+    - tech-in-pharma
+    - ai-powered-rd
 
 exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+  - preview.html
+  - logo-preview.html
+  - _layouts/README.md
+  - _layouts/about.md
+  - _layouts/footer.html
+  - assets/images/og-image.png.png
+  - vendor

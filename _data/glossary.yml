@@ -1,0 +1,128 @@
+# Glossary entries. Rendered on /glossary/ with DefinedTermSet JSON-LD.
+# group: pharma-italy | regulation | data-standards | commercial | therapies
+- term: "AIFA"
+  full: "Agenzia Italiana del Farmaco (Italian Medicines Agency)"
+  group: pharma-italy
+  def: "The national authority that regulates medicines in Italy: authorisation, pricing and reimbursement, pharmacovigilance, supervision of medical promotion and publication of consumption data."
+  link: https://www.aifa.gov.it/
+- term: "AIC"
+  full: "Autorizzazione all'Immissione in Commercio (marketing authorisation)"
+  group: pharma-italy
+  def: "The authorisation that allows a medicine to be sold in Italy. The holder (Titolare AIC) is legally responsible for the product. The same acronym names the numeric code that identifies each package."
+- term: "SSN"
+  full: "Servizio Sanitario Nazionale (Italian National Health Service)"
+  group: pharma-italy
+  def: "Italy's universal public health system, organised at regional level. It reimburses medicines listed in class A and class H."
+- term: "OsMed"
+  full: "Osservatorio Nazionale sull'impiego dei Medicinali"
+  group: pharma-italy
+  def: "AIFA's national observatory on medicine use. Its annual report measures spending and consumption by region, therapeutic category and channel, and splits spending changes into quantity, price and mix effects."
+  link: https://www.aifa.gov.it/osmed-interattivo
+- term: "Class A, H, C (drug reimbursement classes)"
+  group: pharma-italy
+  def: "Italian reimbursement classes. Class A: medicines reimbursed by the SSN. Class H: reimbursed but used in hospitals or specialist settings. Class C: paid by the patient; C-bis covers non-prescription medicines."
+- term: "Farmaceutica convenzionata"
+  full: "Retail pharmacy channel under SSN agreement"
+  group: pharma-italy
+  def: "Medicines dispensed by community pharmacies and reimbursed by the SSN under the national agreement with pharmacies. It is distinct from direct purchases by public health structures (acquisti diretti)."
+- term: "Payback"
+  group: pharma-italy
+  def: "Mechanism through which pharmaceutical companies repay part of the public spending that exceeds the national spending ceilings (tetti di spesa). It is calculated after the fact, on actual spending."
+- term: "Registri di monitoraggio AIFA"
+  full: "AIFA monitoring registries"
+  group: pharma-italy
+  def: "Web-based registries that track eligibility, treatment and outcomes for selected high-cost medicines. They support managed-entry agreements and are a large source of real-world evidence."
+- term: "ATC"
+  full: "Anatomical Therapeutic Chemical classification"
+  group: data-standards
+  def: "WHO classification of active substances in five levels, from organ system (level 1, one letter, e.g. C = cardiovascular) to chemical substance (level 5, seven characters). Level 4 has five characters, e.g. C10AA = statins."
+  link: https://atcddd.fhi.no/
+- term: "DDD"
+  full: "Defined Daily Dose"
+  group: data-standards
+  def: "WHO technical unit: the assumed average maintenance dose per day of a medicine used for its main indication in adults. It allows consumption to be compared across products and countries."
+  link: https://atcddd.fhi.no/
+- term: "Price, quantity and mix effect"
+  group: data-standards
+  def: "Decomposition of a change in pharmaceutical spending. Quantity: more or fewer doses consumed. Price: the same medicine costs more or less than a year earlier. Mix: the basket shifts towards more or less expensive medicines."
+- term: "EHR"
+  full: "Electronic Health Record"
+  group: data-standards
+  def: "Digital record of a patient's health data, used by clinicians at the point of care. Its value depends on interoperability: whether the data can travel between providers."
+- term: "FSE"
+  full: "Fascicolo Sanitario Elettronico (Italian electronic health file)"
+  group: data-standards
+  def: "Italy's national patient-facing electronic health record, managed by the regions, collecting reports, prescriptions and clinical documents."
+  link: https://www.fascicolosanitario.gov.it/
+- term: "HL7 FHIR"
+  full: "Fast Healthcare Interoperability Resources"
+  group: data-standards
+  def: "Standard by HL7 International for exchanging health data through modular resources (Patient, Observation, Medication) and web APIs. It is the reference standard for modern health interoperability."
+  link: https://hl7.org/fhir/
+- term: "Interoperability"
+  group: data-standards
+  def: "The ability of different health information systems to exchange data and use it with the same meaning. It has technical (formats, APIs) and semantic (shared codes and terminologies) layers."
+- term: "RWE / RWD"
+  full: "Real-World Evidence / Real-World Data"
+  group: data-standards
+  def: "RWD is health data collected outside clinical trials (records, registries, claims, pharmacy data). RWE is the clinical or economic evidence derived from analysing it."
+- term: "AI Act"
+  full: "Regulation (EU) 2024/1689 on artificial intelligence"
+  group: regulation
+  def: "EU regulation that classifies AI systems by risk and sets obligations on risk management, technical documentation, transparency and human oversight, especially for high-risk systems."
+  link: https://eur-lex.europa.eu/eli/reg/2024/1689/oj
+- term: "GDPR"
+  full: "General Data Protection Regulation, Regulation (EU) 2016/679"
+  group: regulation
+  def: "EU regulation on personal data protection. Health data is a special category that requires a specific legal basis and stronger safeguards."
+  link: https://eur-lex.europa.eu/eli/reg/2016/679/oj
+- term: "EHDS"
+  full: "European Health Data Space, Regulation (EU) 2025/327"
+  group: regulation
+  def: "EU framework that gives patients digital access to their health data across member states (primary use) and regulates the reuse of health data for research and policy (secondary use). It also sets requirements for EHR systems."
+  link: https://eur-lex.europa.eu/eli/reg/2025/327/oj
+- term: "D.lgs. 219/2006"
+  group: regulation
+  def: "Italian legislative decree that transposes the EU medicines code. Title VIII regulates the advertising of medicinal products, including promotional material aimed at healthcare professionals."
+- term: "EU FMD and serialisation"
+  full: "Falsified Medicines Directive 2011/62/EU and Delegated Regulation (EU) 2016/161"
+  group: regulation
+  def: "EU rules requiring a unique identifier and anti-tampering device on prescription medicine packs, verified against a central repository before dispensing, to prevent falsified medicines."
+  link: https://eur-lex.europa.eu/eli/reg_del/2016/161/oj
+- term: "Gross-to-net"
+  group: commercial
+  def: "The gap between a medicine's list price and the net revenue the manufacturer actually keeps after rebates, discounts, chargebacks and fees. Managing it is a core task of pharma revenue management."
+- term: "Rebate"
+  group: commercial
+  def: "A retrospective payment or credit from manufacturer to customer or payer, triggered by volumes, contract terms or regulation. It lowers the effective price after the sale."
+- term: "Chargeback"
+  group: commercial
+  def: "A claim by a wholesaler to the manufacturer for the difference between the wholesaler's acquisition price and the lower contract price agreed between manufacturer and end customer."
+- term: "Market access"
+  group: commercial
+  def: "The set of activities (evidence, pricing, reimbursement negotiation, contracting) needed for an approved medicine to be reimbursed and actually reach patients."
+- term: "Demand forecasting"
+  group: commercial
+  def: "Estimating future consumption of medicines by product, region or channel, using historical data and drivers such as seasonality, demographics, shortages or epidemics."
+  link: /planpharma/
+- term: "Biosimilar"
+  group: therapies
+  def: "A biological medicine highly similar to an already authorised reference biological, with no clinically meaningful differences in safety and efficacy. Its entry usually lowers prices in the category."
+- term: "Generic (farmaco equivalente)"
+  group: therapies
+  def: "A medicine with the same active substance, strength, form and bioequivalence as an originator whose patent has expired."
+- term: "Orphan drug"
+  group: therapies
+  def: "A medicine for a rare disease. In the EU a condition is rare when it affects no more than 5 in 10,000 people."
+- term: "ATMP"
+  full: "Advanced Therapy Medicinal Products"
+  group: therapies
+  def: "Medicines based on genes, cells or tissues: gene therapies, somatic cell therapies and tissue-engineered products. CAR-T therapies belong to this group."
+- term: "CAR-T"
+  full: "Chimeric Antigen Receptor T-cell therapy"
+  group: therapies
+  def: "Cell therapy in which a patient's T lymphocytes are engineered to recognise and attack cancer cells, then reinfused. Used mainly for blood cancers."
+- term: "GLP-1 receptor agonists"
+  full: "Glucagon-Like Peptide-1 receptor agonists"
+  group: therapies
+  def: "Class of medicines (e.g. semaglutide) used for type 2 diabetes and, increasingly, obesity. A major driver of the mix effect in recent pharmaceutical spending."

@@ -1,8 +1,17 @@
 ---
 title: "AI won't cure the ten-year drug pipeline, but it is compressing pieces of it"
+seo_title: "AI in drug discovery: what it really speeds up"
+description: "Where AI really shortens drug development (target identification, molecule design, clinical trial design) and where biology and regulation still set the pace."
 categories: [ai-powered-rd]
+tags: [AI drug discovery, Clinical trials, Pharmaceutical R&D]
 read_time: 5
+lang: en
 cover: /assets/images/covers/ai-drug-discovery.png
+cover_alt: "Illustration of AI-assisted drug discovery"
+key_points:
+  - "AI compresses specific stages of the pipeline, not the whole decade-long process."
+  - "Strongest evidence: target identification, early molecule design, trial recruitment and site selection."
+  - "Late-stage (Phase 3) development is still governed by biology and regulation."
 ---
 
 The statistic that gets repeated in every R&D conference talk is some version of this: it takes on average over a decade and billions of dollars to bring a new medicine to market, and most candidates fail along the way. AI is regularly framed as the thing that finally breaks that equation. The more accurate framing is narrower and more useful: AI is not compressing the whole pipeline, it is compressing specific, well-defined pieces of it.

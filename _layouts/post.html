@@ -1,40 +1,97 @@
 ---
 layout: default
 ---
-{% assign cat = page.categories | first %}
-{% if cat == 'digital-point-of-care' %}
-  {% assign pillarname = 'Digital Point of Care' %}
-  {% assign pillarurl = '/digital-point-of-care/' %}
-{% elsif cat == 'tech-in-pharma' %}
-  {% assign pillarname = 'Tech in Pharma' %}
-  {% assign pillarurl = '/tech-in-pharma/' %}
-{% else %}
-  {% assign pillarname = 'AI-Powered R&D' %}
-  {% assign pillarurl = '/ai-powered-rd/' %}
-{% endif %}
-<article>
+{%- assign cat = page.categories | first -%}
+{%- assign pillar = site.pillars[cat] -%}
+{%- assign it = false -%}{%- if page.lang == "it" -%}{%- assign it = true -%}{%- endif -%}
+{%- assign modified = page.last_modified_at | default: page.date -%}
+<article class="post">
   <header class="post-header">
     <div class="wrap">
-      <a class="back-link" href="{{ pillarurl | relative_url }}">&larr; {{ pillarname }}</a>
-      <p class="eyebrow eyebrow--{{ cat }}">{{ cat | replace: '-', ' ' | capitalize }}</p>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="{{ '/' | relative_url }}">Home</a> <span aria-hidden="true">/</span>
+        <a href="{{ pillar.url | relative_url }}">{{ pillar.name }}</a>
+      </nav>
+      <p class="eyebrow eyebrow--{{ cat }}">{{ pillar.name }}</p>
       <h1>{{ page.title }}</h1>
+      {% if page.description %}<p class="post-dek">{{ page.description }}</p>{% endif %}
       <div class="post-meta">
-        <img class="post-avatar" src="{{ '/assets/images/profile.png' | relative_url }}" alt="Nello Grimaldi">
+        <img class="post-avatar" src="{{ '/assets/images/profile.png' | relative_url }}" alt="Nello Grimaldi" width="40" height="40">
         <div>
-          <span class="post-author">Nello Grimaldi</span>
-          <span class="post-date">{{ page.date | date: "%B %d, %Y" }}{% if page.read_time %} · {{ page.read_time }} min read{% endif %}</span>
+          <a class="post-author" href="{{ '/about/' | relative_url }}" rel="author">Nello Grimaldi</a>
+          <span class="post-date">
+            <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d/%m/%Y" }}</time>
+            {%- if page.last_modified_at %} · {% if it %}Aggiornato{% else %}Updated{% endif %} <time datetime="{{ modified | date_to_xmlschema }}">{{ modified | date: "%d/%m/%Y" }}</time>{% endif %}
+            {%- if page.read_time %} · {{ page.read_time }} min{% endif %}
+          </span>
         </div>
       </div>
     </div>
   </header>
   {% if page.cover %}
   <div class="wrap">
-    <img class="post-cover" src="{{ page.cover | relative_url }}" alt="{{ page.title }}">
+    <img class="post-cover" src="{{ page.cover | relative_url }}" alt="{{ page.cover_alt | default: page.title }}">
   </div>
   {% endif %}
   <div class="wrap">
     <div class="post-body">
+      {% if page.key_points %}
+      <aside class="key-points" aria-label="{% if it %}In sintesi{% else %}Key points{% endif %}">
+        <p class="key-points-title">{% if it %}In sintesi{% else %}Key points{% endif %}</p>
+        <ul>
+          {% for k in page.key_points %}<li>{{ k | markdownify | remove: '<p>' | remove: '</p>' | strip }}</li>{% endfor %}
+        </ul>
+      </aside>
+      {% endif %}
+
       {{ content }}
+
+      {% if page.sources %}
+      <section class="post-sources">
+        <h2>{% if it %}Fonti{% else %}Sources{% endif %}</h2>
+        <ol>
+          {% for s in page.sources %}<li><a href="{{ s.url }}" target="_blank" rel="noopener">{{ s.title }}</a>{% if s.publisher %} — {{ s.publisher }}{% endif %}</li>{% endfor %}
+        </ol>
+      </section>
+      {% endif %}
+
+      {% if page.tags and page.tags != empty %}
+      <div class="post-tags">
+        {% for t in page.tags %}<a class="tag" href="{{ '/topics/' | relative_url }}#{{ t | slugify }}">{{ t }}</a>{% endfor %}
+      </div>
+      {% endif %}
+
+      <aside class="author-box">
+        <img src="{{ '/assets/images/profile.png' | relative_url }}" alt="Nello Grimaldi" width="64" height="64">
+        <div>
+          <p class="author-box-name"><a href="{{ '/about/' | relative_url }}" rel="author">Nello Grimaldi</a></p>
+          {% if it %}
+          <p>Advisor di tecnologia sanitaria nel settore life sciences: revenue management farmaceutico, supply chain e salute digitale. Master in Salute Digitale (UOC).</p>
+          {% else %}
+          <p>Health technology advisor in life sciences: pharma revenue management, supply chain and digital health. Master's in Digital Health (UOC).</p>
+          {% endif %}
+          <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener me">LinkedIn →</a>
+        </div>
+      </aside>
     </div>
   </div>
+
+  {%- assign related = site.posts | where_exp: "p", "p.categories contains cat" | where_exp: "p", "p.url != page.url" -%}
+  {% if related.size > 0 %}
+  <section class="pillar-articles related">
+    <div class="wrap">
+      <h2 class="section-label">{% if it %}Leggi anche{% else %}Related reading{% endif %}</h2>
+      <div class="card-grid">
+        {% for post in related limit: 3 %}
+        <a class="post-card" href="{{ post.url | relative_url }}" {% if post.lang %}hreflang="{{ post.lang }}"{% endif %}>
+          {% if post.cover %}<img class="post-card-cover" src="{{ post.cover | relative_url }}" alt="" loading="lazy">{% endif %}
+          <span class="tag tag--{{ cat }}">{{ pillar.name }}</span>
+          <h3>{{ post.title }}</h3>
+          <p>{{ post.description | default: post.excerpt | strip_html | truncatewords: 22 }}</p>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  {% endif %}
 </article>

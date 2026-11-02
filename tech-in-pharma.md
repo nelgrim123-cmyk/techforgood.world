@@ -1,6 +1,7 @@
 ---
 layout: pillar
 title: Tech in Pharma
+seo_title: "Tech in Pharma: AI in pricing, market access, regulation and pharma data"
 eyebrow: Pillar
 category: tech-in-pharma
 permalink: /tech-in-pharma/

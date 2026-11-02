@@ -1,0 +1,24 @@
+---
+layout: null
+permalink: /llms.txt
+sitemap: false
+---
+# {{ site.title }}
+
+> {{ site.description | strip_newlines | strip }}
+
+Author: {{ site.author.name }} ({{ site.author.full_name }}), {{ site.author.job_title }}. Profile: {{ site.author.url }} · LinkedIn: {{ site.author.linkedin }}
+Languages: English and Italian. Focus: Italian and EU pharmaceutical system, AIFA and OsMed data, AI regulation in pharma, EHR interoperability, pharma commercial operations, AI in drug R&D.
+
+## Pillars
+- [Digital Point of Care]({{ '/digital-point-of-care/' | absolute_url }}): EHR, interoperability, scheduling and care coordination
+- [Tech in Pharma]({{ '/tech-in-pharma/' | absolute_url }}): AI and data in pharma pricing, market access, regulation and spending analysis
+- [AI-Powered R&D]({{ '/ai-powered-rd/' | absolute_url }}): AI in drug discovery and clinical trials
+
+## Articles
+{% for p in site.posts %}- [{{ p.title }}]({{ p.url | absolute_url }}) ({{ p.lang | default: "en" }}, {{ p.date | date: "%Y-%m-%d" }}): {{ p.description }}
+{% endfor %}
+## Reference
+- [Glossary]({{ '/glossary/' | absolute_url }}): definitions of AIFA, OsMed, ATC, DDD, SSN, AIC, payback, EHR, HL7 FHIR, EHDS, AI Act, gross-to-net and more
+- [Resources]({{ '/resources/' | absolute_url }}): official data sources and regulations
+- [PharmaPlanTest]({{ '/planpharma/' | absolute_url }}): open prototype for regional pharmaceutical demand forecasting in Italy
