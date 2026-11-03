@@ -16,4 +16,3 @@ description: "Curated official sources used in the analyses: AIFA, OsMed, ISTAT,
 </ul>
 {% endfor %}
 
-See also the [glossary]({{ '/glossary/' | relative_url }}) for definitions of the terms used.

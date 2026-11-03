@@ -600,7 +600,7 @@ a:hover { color: var(--navy); }
 .see-all { text-align: right; margin: 28px 0 0; font-weight: 600; font-size: 15px; }
 
 .knowledge-hub { padding: 88px 0; }
-.hub-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.hub-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
 .hub-card {
   display: block; border: 1px solid var(--border); border-radius: 6px;
   padding: 24px; color: var(--text); transition: border-color .15s;

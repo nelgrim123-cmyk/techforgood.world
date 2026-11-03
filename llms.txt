@@ -19,6 +19,5 @@ Languages: English and Italian. Focus: Italian and EU pharmaceutical system, AIF
 {% for p in site.posts %}- [{{ p.title }}]({{ p.url | absolute_url }}) ({{ p.lang | default: "en" }}, {{ p.date | date: "%Y-%m-%d" }}): {{ p.description }}
 {% endfor %}
 ## Reference
-- [Glossary]({{ '/glossary/' | absolute_url }}): definitions of AIFA, OsMed, ATC, DDD, SSN, AIC, payback, EHR, HL7 FHIR, EHDS, AI Act, gross-to-net and more
 - [Resources]({{ '/resources/' | absolute_url }}): official data sources and regulations
 - [PharmaPlanTest]({{ '/planpharma/' | absolute_url }}): open prototype for regional pharmaceutical demand forecasting in Italy

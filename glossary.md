@@ -3,6 +3,7 @@ layout: page
 title: Glossary
 seo_title: "Pharma & digital health glossary: AIFA, OsMed, ATC, DDD, EHR, FHIR"
 permalink: /glossary/
+published: false
 description: "Plain-language glossary of pharma and digital health terms: AIFA, OsMed, ATC, DDD, SSN, AIC, payback, biosimilars, EHR, FHIR, EHDS, AI Act."
 ---
 {%- assign groups = "pharma-italy|Italian pharmaceutical system,regulation|Regulation,data-standards|Data and standards,commercial|Pharma commercial operations,therapies|Therapies and product types" | split: "," -%}
