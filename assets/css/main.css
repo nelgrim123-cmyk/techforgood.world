@@ -635,5 +635,5 @@ a:hover { color: var(--navy); }
   .author-box { flex-direction: column; }
 }
 
-.post-video { display: block; width: 100%; max-width: 420px; margin: 0 auto 40px; border-radius: 6px; background: #000; aspect-ratio: 2 / 3; }
+.post-video { display: block; width: 100%; max-width: 400px; margin: 0 auto 40px; border-radius: 6px; background: #000; aspect-ratio: 9 / 16; }
 .video-badge { display: inline-block; font-family: var(--font-body, inherit); font-size: 12px; font-weight: 700; letter-spacing: .04em; color: #fff; background: var(--navy); border-radius: 3px; padding: 2px 7px; vertical-align: middle; margin-right: 4px; }
