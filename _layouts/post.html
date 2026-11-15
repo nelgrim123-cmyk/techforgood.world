@@ -28,7 +28,14 @@ layout: default
       </div>
     </div>
   </header>
-  {% if page.cover %}
+  {% if page.video %}
+  <div class="wrap">
+    <video class="post-video" controls playsinline preload="metadata"{% if page.video_poster %} poster="{{ page.video_poster | relative_url }}"{% endif %}>
+      <source src="{{ page.video | relative_url }}" type="video/mp4">
+      <a href="{{ page.video | relative_url }}">Download the video</a>
+    </video>
+  </div>
+  {% elsif page.cover %}
   <div class="wrap">
     <img class="post-cover" src="{{ page.cover | relative_url }}" alt="{{ page.cover_alt | default: page.title }}">
   </div>
@@ -86,7 +93,7 @@ layout: default
         <a class="post-card" href="{{ post.url | relative_url }}" {% if post.lang %}hreflang="{{ post.lang }}"{% endif %}>
           {% if post.cover %}<img class="post-card-cover" src="{{ post.cover | relative_url }}" alt="" loading="lazy">{% endif %}
           <span class="tag tag--{{ cat }}">{{ pillar.name }}</span>
-          <h3>{{ post.title }}</h3>
+          <h3>{% if post.format == 'video' %}<span class="video-badge">▶ Video</span> {% endif %}{{ post.title }}</h3>
           <p>{{ post.description | default: post.excerpt | strip_html | truncatewords: 22 }}</p>
         </a>
         {% endfor %}

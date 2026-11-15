@@ -115,6 +115,23 @@
       {%- endif %}
       "wordCount": {{ content | strip_html | number_of_words }}
     },
+    {%- if page.video %}
+    {
+      "@type": "VideoObject",
+      "@id": {{ canonical | append: "#video" | jsonify }},
+      "name": {{ page.title | jsonify }},
+      "description": {{ seo_desc | jsonify }},
+      "thumbnailUrl": {{ page.video_poster | default: seo_image | absolute_url | jsonify }},
+      "uploadDate": {{ page.date | date_to_xmlschema | jsonify }},
+      {%- if page.video_duration %}
+      "duration": {{ page.video_duration | jsonify }},
+      {%- endif %}
+      "contentUrl": {{ page.video | absolute_url | jsonify }},
+      "inLanguage": {{ page_lang | jsonify }},
+      "author": { "@id": {{ person_id | jsonify }} },
+      "isPartOf": { "@id": {{ canonical | append: "#article" | jsonify }} }
+    },
+    {%- endif %}
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
