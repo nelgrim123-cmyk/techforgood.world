@@ -28,16 +28,6 @@ sources:
 
 This short video is an experiment in format. I made it with AI video generation tools for the DataCamp #AIForCreativity challenge, to explain in about a minute one idea I keep coming back to on this site: AI is not shrinking the whole drug pipeline, it is shrinking its first part.
 
-## What the video shows
-
-The starting point is the classic benchmark. Bringing a new medicine from discovery to market has long taken more than 10 to 15 years, and around nine in ten candidates that reach clinical trials never make it to approval.
-
-The counterexample is rentosertib, a TNIK inhibitor for idiopathic pulmonary fibrosis. Both the target and the molecule came out of a generative AI platform. The team identified the drug candidate in about 18 months and went from target discovery to completed phase 0/1 testing in about 30 months. A randomized phase 2a trial, published in Nature Medicine in 2025, then showed an acceptable safety profile and early signals of efficacy.
-
-## What it does not show
-
-One compound is not a trend, and 30 months to phase 1 is not 30 months to approval. Phase 2 and phase 3 still take years, and they fail for reasons no model predicted. I wrote about where the compression is real and where the hype runs ahead in [an earlier article]({{ '/ai-powered-rd/ai-drug-discovery-timelines/' | relative_url }}).
-
 ---
 
 *Video generated with AI tools (images, motion and voice). Script, fact-checking and editing by the author.*
